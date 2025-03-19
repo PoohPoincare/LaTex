@@ -1,0 +1,285 @@
+\ProvidesPackage{WHU_Beamer}
+
+% ================================================================================
+% Packages
+% ================================================================================
+\usepackage{ctex}
+\usepackage{subfig}
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{amsthm,amsmath,amssymb,bm,mathrsfs,bbm,amsfonts}
+\RequirePackage{verbatim}
+\RequirePackage{hyperref}
+\RequirePackage{listings}
+\RequirePackage{pifont}
+\RequirePackage[utf8]{inputenc} % allow utf-8 input
+\RequirePackage[T1]{fontenc}    % use 8-bit T1 fonts
+\RequirePackage{url}            % simple URL typesetting
+\RequirePackage{booktabs}       % professional-quality tables
+\RequirePackage{amsfonts}       % blackboard math symbols
+\RequirePackage{nicefrac}       % compact symbols for 1/2, etc.
+%\RequirePackage{microtype}      % microtypography
+\RequirePackage{xcolor}         % colors
+\RequirePackage{float}
+\usepackage{multirow}
+\usepackage{longtable} % 支持跨页表格
+\usepackage{tabularx} % 自动调整列宽
+\usepackage{lscape}   % 横向表格支持
+\usepackage{makecell} % 支持单元格内换行
+\usepackage{physics}
+\usepackage{mathdesign}
+\usepackage{multicol}
+\RequirePackage[ruled, vlined]{algorithm2e}
+\RequirePackage{algpseudocode}
+\RequirePackage{graphicx}
+\RequirePackage{subcaption}
+\RequirePackage{stfloats} 
+\usepackage{wallpaper}
+% ================================================================================
+% Color Accents
+% ================================================================================
+
+\usepackage[most]{tcolorbox}
+\usepackage{listings} 
+\lstset{numbers=left,breaklines,
+numberstyle= \tiny,keywordstyle= \color{ blue!70},commentstyle=\color{red!50!green!50!blue!50},
+frame=shadowbox, rulesepcolor= \color{ red!20!green!20!blue!20},
+escapeinside=``} 
+
+\definecolor{whugreen}{RGB}{17,87,64}
+\definecolor{skyblue}{HTML}{6BA4B8}
+
+\setbeamercolor{title}{fg=white}
+\setbeamercolor{author}{fg=white}
+\setbeamercolor{affiliation}{fg=white}
+\setbeamercolor{date}{fg=white}
+\setbeamercolor{head}{bg=whugreen}
+
+\setbeamercolor{alerted text}{fg=whugreen}
+\setbeamercolor{normal text}{fg=darkgray,bg=white}
+\setbeamercolor{structure}{fg=whugreen}
+
+\setbeamercolor{jumbo}{bg=whugreen}
+\setbeamercolor{progress bar}{fg=whugreen}
+\setbeamercolor{progress bar progress}{use=progress bar,bg=progress bar.fg}
+
+\hypersetup{
+	colorlinks,
+	linkcolor=whugreen,
+	anchorcolor=red,
+	citecolor=whugreen,
+	urlcolor=whugreen,
+}
+
+%\setbeamercolor{block title}{fg=airforceblue,bg=morelightgray}
+%\setbeamercolor{block body}{fg=darkgray,bg=morelightgray}
+
+% ================================================================================
+% Fonts
+% ================================================================================
+
+\setbeamerfont{author}{size=\small}
+\setbeamerfont{affiliation}{size=\small}
+\setbeamerfont{date}{size=\footnotesize}
+\setbeamerfont{title}{series=\bfseries, size=\Large}
+\setbeamerfont{subtitle}{series=\mdseries,size=\normalsize}
+
+\setbeamerfont{frametitle}{series=\bfseries}
+\setbeamerfont{framesubtitle}{series=\mdseries}
+\setbeamerfont{footline}{size=\scriptsize}
+\setbeamerfont{block title}{series=\centering, size=\small}
+\setbeamerfont{block body}{size=\scriptsize}
+
+\usefonttheme{serif}
+
+% ================================================================================
+% Basic Settings
+% ================================================================================
+
+% cancel navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+% prettier boxes
+\setbeamertemplate{blocks}[rounded]
+
+% bullet points
+\setbeamertemplate{itemize item}{\textbullet}
+\setbeamertemplate{itemize subitem}{\textemdash}
+\setbeamertemplate{itemize subsubitem}{\ensuremath{\circ}}
+
+% paragraph spacing
+\setlength{\parskip}{10pt}
+
+% code environment
+\lstset{
+    basicstyle          =   \ttfamily,          % 基本代码风格
+    keywordstyle        =   \color{teal}\bfseries,          % 关键字风格
+    commentstyle        =   \rmfamily\itshape,  % 注释的风格，斜体
+    stringstyle         =   \ttfamily,  % 字符串风格
+    commentstyle    =   \color{olive}\ttfamily,
+    breaklines      =   true,   % 自动换行，建议不要写太长的行
+    columns         =   fixed,  % 如果不加这一句，字间距就不固定，很丑，必须加
+    flexiblecolumns,                % 别问为什么，加上这个
+    %numbers             =   left,   % 行号的位置在左边，注释掉则不显示行号
+    showspaces          =   false,  % 是否显示空格，显示了有点乱，所以不现实了
+    numberstyle         =   \zihao{-5}\ttfamily,    % 行号的样式，小五号，tt等宽字体
+    showstringspaces    =   false,
+    captionpos          =   t,      % 这段代码的名字所呈现的位置，t指的是top上面
+    frame               =   lrtb,   % 显示边框
+}
+\lstdefinestyle{Python}{
+    language        =   Python, % 语言选Python
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{teal},
+    keywordstyle    =   [2] \color{cyan},
+    stringstyle     =   \color{red},
+    commentstyle    =   \color{olive}\ttfamily,
+    breaklines      =   true,   % 自动换行，建议不要写太长的行
+    columns         =   fixed,  % 如果不加这一句，字间距就不固定，很丑，必须加
+    basewidth       =   0.5em,
+}
+\lstdefinestyle{Bash}{
+    language        =   Bash, 
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{teal},
+    keywordstyle    =   [2] \color{cyan},
+    stringstyle     =   \color{red},
+    commentstyle    =   \color{olive}\ttfamily,
+    breaklines      =   true,   % 自动换行，建议不要写太长的行
+    columns         =   fixed,  % 如果不加这一句，字间距就不固定，很丑，必须加
+    basewidth       =   0.5em,
+}
+\lstdefinestyle{C++}{
+    language        =   C++, 
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{teal},
+    keywordstyle    =   [2] \color{cyan},
+    stringstyle     =   \color{red},
+    commentstyle    =   \color{olive}\ttfamily,
+    breaklines      =   true,   % 自动换行，建议不要写太长的行
+    columns         =   fixed,  % 如果不加这一句，字间距就不固定，很丑，必须加
+    basewidth       =   0.5em,
+}
+%\lstset{style=mystyle}
+
+% ================================================================================
+% Slide Templates
+% ================================================================================
+
+% headline for all frames
+\setbeamertemplate{headline}{
+	\ifnum\theframenumber=1
+		% not display the headline for the title page
+	\else
+		\begin{beamercolorbox}[wd=\paperwidth,ht=40pt]{head}
+			\hspace{410pt}\includegraphics[width=39pt]{source/logo_white.png}
+		\end{beamercolorbox}
+	\fi
+}
+
+% frame title and subtitle
+\setbeamertemplate{frametitle}{
+    \begin{picture}(0,0)
+        \ifx\insertframesubtitle\@empty%
+            \put(0,28){\usebeamerfont{frametitle}\usebeamercolor[fg]{title}\insertframetitle}%
+		\else%
+			\put(0,33){\usebeamerfont{frametitle}\usebeamercolor[fg]{title} \insertframetitle}%
+			\put(2,20){\usebeamerfont{framesubtitle}\usebeamercolor[fg]{title} \insertframesubtitle }
+		\fi
+    \end{picture}
+}
+
+% title page
+\setbeamertemplate{title page}{
+	\begin{picture}(0,0)
+		\put(-10,45){\includegraphics[width=140pt]{source/logo_name.png}}
+        \put(300,38){\includegraphics[width=100pt]{source/xiaoxun.png}}
+
+        \put(-5,-110){
+            \begin{beamercolorbox}[wd=1.1\paperwidth,ht=140pt]{jumbo}
+            \end{beamercolorbox}
+        }
+        	\put(280,-107){\includegraphics[width=136pt]{source/logo_white.png}}
+		\put(0,-5){%
+			\begin{minipage}{300pt}
+				\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par
+				\vspace{10pt}
+				\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle
+			\end{minipage}
+		}
+		\put(0,-75){%
+                \begin{minipage}{300pt}
+				\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par
+				\vspace{10pt}
+			\end{minipage}
+                % \usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor
+		}
+		\put(0,-90){%
+			\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate
+		}
+	\end{picture}
+}
+
+% \begin{beamercolorbox}[wd=0.9\textwidth,sep=10pt,leftskip=8mm]{title}
+%     {\usebeamerfont{title}\inserttitle}
+
+%     {\usebeamerfont{subtitle}\insertsubtitle}
+
+%     {\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor}
+
+%     {\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate}
+% \end{beamercolorbox}
+
+\defbeamertemplate{footline}{progress bar}{
+	\dimen0=\paperwidth
+	\multiply\dimen0 by \insertframenumber
+	\divide\dimen0 by \inserttotalframenumber
+	\edef\progressbarwidth{\the\dimen0}
+	\leavevmode%
+	\ifnum\theframenumber=1
+	\else
+		\begin{beamercolorbox}[wd=\paperwidth,ht=2pt,dp=1pt]{progress bar}
+			\begin{beamercolorbox}[wd=\progressbarwidth,ht=2pt,dp=1pt]{progress bar progress}
+			\end{beamercolorbox}%
+		\end{beamercolorbox}%
+	\fi
+}
+
+\setbeamertemplate{footline}[progress bar]
+
+% style of sections and subsections in ToCs
+\setbeamertemplate{section in toc}{
+	$\blacktriangleright$~\inserttocsection
+}
+\setbeamertemplate{subsection in toc}{}
+\setbeamertemplate{frametitle continuation}{}
+
+% begin of sections
+\setbeamercolor{background canvas}{bg=}
+\AtBeginSection[]
+{
+    %\begingroup
+    \begin{frame}{Contents}{}
+    	%\begin{picture}(0,0)
+    		%\put(-28.5,-157){\includegraphics[width=\paperwidth]{source/back2.png}}
+                % we offer 5 options for background
+                % if you want the box to be set in center, use -143, if not, use -137 in \put()
+    	%\end{picture}
+        \ThisLLCornerWallPaper{1}{source/back2.png} 
+        \begin{center}
+        \begin{tcolorbox}[colback=whugreen!5!white,colframe=whugreen!75!black,width=8cm]
+        \tableofcontents[currentsection]
+        \end{tcolorbox}
+        \end{center}
+    \end{frame}
+    %\endgroup
+}
+\RequirePackage[
+    backend=bibtex,
+    %sorting=ynt,
+    style=ieee
+]{biblatex}
+\addbibresource{ref.bib}

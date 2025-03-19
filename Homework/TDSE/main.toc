@@ -1,0 +1,26 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}薛定谔方程}{1}{section.1}%
+\contentsline {paragraph}{\numberline {1.0.0.1}}{1}{paragraph.1.0.0.1}%
+\contentsline {subsection}{\numberline {1.1}原子单位制}{1}{subsection.1.1}%
+\contentsline {paragraph}{\numberline {1.1.0.1}}{1}{paragraph.1.1.0.1}%
+\contentsline {section}{\numberline {2}数值解法}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}离散化}{1}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}矩阵指数}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}切比雪夫多项式}{2}{subsection.2.3}%
+\contentsline {section}{\numberline {3}高斯波包}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Theory}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Result}{3}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Code}{5}{section.4}%
+\contentsline {section}{\numberline {5}Appendix：Tight-Binding propagation method and Application}{11}{section.5}%
+\contentsline {paragraph}{\numberline {5.0.0.1}}{11}{paragraph.5.0.0.1}%
+\contentsline {subsection}{\numberline {5.1}Methodology}{11}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Tight-binding models}{11}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Tight-binding propagation method}{11}{subsubsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.2}Application}{12}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Density of states}{12}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Local density of states}{12}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Optical conductivity}{12}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}DC conductivity}{12}{subsubsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.5}Diffusion coefficient}{12}{subsubsection.5.2.5}%
+\contentsline {section}{References}{13}{equation.5.72}%
+\contentsfinish 

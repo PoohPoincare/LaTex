@@ -1,0 +1,15 @@
+\frametitle{Splitting in Columns}
+简单的分栏的例子,注意\verb|textwidth|的变化:\\
+\vspace{30pt}
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \includegraphics[width=0.8\textwidth]{source/xiaoxun.png}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \includegraphics[width=0.8\textwidth]{source/back4.png}
+        \end{figure}
+    \end{column}
+\end{columns}

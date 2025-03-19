@@ -1,0 +1,159 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% --------------------------------------------------------
+% Tau
+% LaTeX Template
+% Version 2.4.1 (22/05/2024)
+%
+% Author: 
+% Guillermo Jimenez (memo.notess1@gmail.com)
+% 
+% License:
+% Creative Commons CC BY 4.0
+% --------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[9pt,a4paper,twoside]{tau-class/tau}
+%----------------------------------------------------------
+% TITLE
+%----------------------------------------------------------
+\journalname{计算物理\uppercase\expandafter{\romannumeral3}}
+\title{含时薛定谔方程的数值解法}
+%\CJKfamily{SimSun}
+%----------------------------------------------------------
+% AUTHORS, AFFILIATIONS AND PROFESSOR
+%----------------------------------------------------------
+
+\author[a,1]{Author}
+%\author[b,2]{Author Two}
+%\author[b,c,3]{Author Three}
+
+%----------------------------------------------------------
+
+\affil[a]{武汉大学，物理科学与技术学院}
+%\affil[b]{Affiliation of author two}
+%\affil[c]{Affiliation of author three}
+
+%\professor{Professor/Authority or other information}
+
+%----------------------------------------------------------
+% FOOTER INFORMATION
+%----------------------------------------------------------
+
+\institution{Wuhan University}
+\footinfo{Homework\uppercase\expandafter{\romannumeral4}}
+\theday{December, 2024}
+\leadauthor{Author}
+\course{计算物理\uppercase\expandafter{\romannumeral3}}
+
+%----------------------------------------------------------
+% ABSTRACT AND KEYWORDS
+%----------------------------------------------------------
+
+\begin{abstract}    
+
+\end{abstract}
+
+%----------------------------------------------------------
+
+\keywords{薛定谔方程，切比雪夫多项式，紧束缚模型}
+
+%----------------------------------------------------------
+\begin{document}
+\onecolumn
+\nolinenumbers
+    \maketitle 
+    \thispagestyle{firststyle}
+	%\tauabstract 
+    \taukeywords
+    \tableofcontents
+    \linenumbers 
+    
+%----------------------------------------------------------
+\input{section1.tex}
+\twocolumn
+\input{section2.tex}
+\newpage
+%\clearpage%新一页而不是新一列
+
+	
+%    If line numbering is enabled, we recommend placing the command \verb|\nolinenumbers| at the beginning %and \verb|\linenumbers| at the end of the code. 
+%	
+%    This will temporarily remove line numbering and the code will look better as shown in this example.
+
+%----------------------------------------------------------
+\nocite{*}
+\addcontentsline{toc}{section}{References}
+
+\printbibliography
+
+%----------------------------------------------------------
+%\section{Document style options}
+%
+%    \subsection{Tau start}
+%	
+%        We included the \verb|\taustart{}| command, which provides a personalized lettrine for the %beginning of a paragraph.
+%
+%    \subsection{Line numbering}
+%	
+%        By implementing the \textit{lineno} package, the line numbering of the document can be placed with %the command \verb|\linenumbers|.
+%		
+%        I recommend placing the command after the abstract and table of contents for a better appearance.
+%		
+%    \subsection{Table of contents}
+%	
+%        The \textit{tau class} provides a customised design for the table of contents. Each level of the %ToC provides a preview of the content and its location in the document. 
+%		
+%section{Figures and tables}
+%
+%   \subsection{Figures}
+%		
+%	Fig. \ref{fig:figure} shows an example figure.
+%		
+%	\begin{figure}[H]
+%		\centering
+%		\includegraphics[width=0.75\columnwidth]{figures/Example.pdf}
+%		\caption{Example figure obtained from PGFPlots \cite{PFGPlots}.}
+%		\label{fig:figure}
+%	\end{figure}
+%		
+%       Fig. \ref{fig:examplefloat} shows an example of two figures that covers the width of the page. It can be placed at the top or bottom of the page. The space between the figures can also be changed using the \verb|\hspace{Xpt}| command.
+%		
+   
+	
+%    \subsection{Tables}
+%	
+%        Table \ref{tab:table} shows an example table. The \verb|\tabletext{}| is used to add notes to %tables easily. 
+%		
+%	\begin{table}[H]
+%		\centering
+%		\caption{Small example table.}
+%		\label{tab:table}
+%		\begin{tabular}{cc}
+%			\toprule
+%			\textbf{Column 1} & \textbf{Column 2} \\
+%			\midrule
+%			Data 1 & Data 2 \\
+%			Data 3 & Data 4 \\
+%			\bottomrule
+%		\end{tabular}
+%			
+%            \tabletext{Note: I'm a table text for additional information.}
+%			
+%	\end{table}
+%		
+%\section{Tau packages}
+%
+%    \subsection{Tauenvs}
+%	
+%		
+%	\begin{tauenv}[frametitle=Environment with custom title]
+%            This is an example of the custom title environment. To add a title type \verb|[frametitle=Your %title]| next to the beginning of the environment (as shown in this example).
+%	\end{tauenv}
+%
+%		
+%\section{Equation}
+%
+%    Equation \ref{ec:equation}, shows the Schrödinger equation as an example. 
+%	\begin{equation} \label{ec:equation}
+%		\frac{\hbar^2}{2m}\nabla^2\Psi + V(\mathbf{r})\Psi = -i\hbar \frac{\partial\Psi}{\partial t}
+%	\end{equation} 
+\end{document}

@@ -1,0 +1,242 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{QUANTUM}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CT}{%
+         family={C.Cohen-Tannoudji},
+         familyi={C\bibinithyphendelim T\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=�}{%
+         family={刘家谟译},
+         familyi={�\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {高等教育出版社}%
+    }
+    \strng{namehash}{CT1}
+    \strng{fullhash}{CT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{量子力学}
+    \field{volume}{1}
+    \field{year}{2014}
+  \endentry
+
+  \entry{sb}{book}{}
+    \name{author}{1}{}{%
+      {{hash=�}{%
+         family={单斌},
+         familyi={�\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {华中科技大学出版社}%
+    }
+    \strng{namehash}{�1}
+    \strng{fullhash}{�1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{计算材料学}
+    \field{year}{2023}
+  \endentry
+
+  \entry{De1996}{inbook}{}
+    \name{author}{1}{}{%
+      {{hash=DRH}{%
+         family={De\bibnamedelima Raedt},
+         familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+         given={Hans},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \list{publisher}{1}{%
+      {WORLD SCIENTIFIC}%
+    }
+    \strng{namehash}{DRH1}
+    \strng{fullhash}{DRH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Annual Reviews of Computational Physics IV}
+    \verb{doi}
+    \verb 10.1142/9789812830050_0004
+    \endverb
+    \field{isbn}{978-981-02-2728-9}
+    \field{pages}{107–146}
+    \field{title}{COMPUTER SIMULATION OF QUANTUM PHENOMENA IN NANOSCALE DEVICES}
+    \verb{url}
+    \verb https://www.worldscientific.com/doi/abs/10.1142/9789812830050_0004
+    \endverb
+    \field{month}{05}
+    \field{year}{1996}
+  \endentry
+
+  \entry{Li}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LY}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Yunhai},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ZZ}{%
+         family={Zhan},
+         familyi={Z\bibinitperiod},
+         given={Zhen},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=KX}{%
+         family={Kuang},
+         familyi={K\bibinitperiod},
+         given={Xueheng},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Yonggang},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yuan},
+         familyi={Y\bibinitperiod},
+         given={Shengjun},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{LYZZKX+1}
+    \strng{fullhash}{LYZZKXLYYS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.cpc.2022.108632
+    \endverb
+    \field{issn}{00104655}
+    \field{pages}{108632}
+    \field{title}{TBPLaS: A tight-binding package for large-scale simulation}
+    \field{volume}{285}
+    \field{journaltitle}{Computer Physics Communications}
+    \field{month}{04}
+    \field{year}{2023}
+  \endentry
+
+  \entry{PhysRevB.82.115448}{article}{}
+    \name{author}{3}{}{%
+      {{hash=YS}{%
+         family={Yuan},
+         familyi={Y\bibinitperiod},
+         given={Shengjun},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DRH}{%
+         family={De\bibnamedelima Raedt},
+         familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+         given={Hans},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=KMI}{%
+         family={Katsnelson},
+         familyi={K\bibinitperiod},
+         given={Mikhail\bibnamedelima I.},
+         giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{YSDRHKMI1}
+    \strng{fullhash}{YSDRHKMI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevB.82.115448
+    \endverb
+    \field{issue}{11}
+    \field{pages}{115448}
+    \field{title}{Modeling electronic structure and transport properties of graphene with resonant scattering centers}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevB.82.115448
+    \endverb
+    \field{volume}{82}
+    \field{journaltitle}{Phys. Rev. B}
+    \field{year}{2010}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Haydock_1972}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HR}{%
+         family={Haydock},
+         familyi={H\bibinitperiod},
+         given={R},
+         giveni={R},
+      }}%
+      {{hash=HV}{%
+         family={Heine},
+         familyi={H\bibinitperiod},
+         given={V},
+         giveni={V},
+      }}%
+      {{hash=KMJ}{%
+         family={Kelly},
+         familyi={K\bibinitperiod},
+         given={M\bibnamedelima J},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HRHVKMJ1}
+    \strng{fullhash}{HRHVKMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Some new methods are presented for calculating the density of states n(E) and other aspects of electronic structure in a tight-binding band, without use of Bloch's theorem or the band structure E(k). The methods are therefore applicable to calculating the local density of states at surfaces, impurities etc. and relate the electronic structure to the local atomic environment. They depend on developing the Green function as an infinite continued fraction. There is no difficulty in obtaining n(E) in a few minutes computing time correct to the first 50 moments for an s-band and 10 moments for d-bands. The present paper discusses the methods and ideas, with specific applications to follow.%
+    }
+    \verb{doi}
+    \verb 10.1088/0022-3719/5/20/004
+    \endverb
+    \field{number}{20}
+    \field{pages}{2845}
+    \field{title}{Electronic structure based on the local atomic environment for tight-binding bands}
+    \verb{url}
+    \verb https://dx.doi.org/10.1088/0022-3719/5/20/004
+    \endverb
+    \field{volume}{5}
+    \field{journaltitle}{Journal of Physics C: Solid State Physics}
+    \field{year}{1972}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{PFGPlots}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{{PGFPlots - A LaTeX package to create plots.}}
+    \verb{url}
+    \verb https://pgfplots.sourceforge.net/
+    \endverb
+  \endentry
+\enddatalist
+\endinput

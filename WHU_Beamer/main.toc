@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{讨论}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{切比雪夫多项式}{8}{0}{2}
+\beamer@sectionintoc {3}{Summary}{11}{0}{3}
+\beamer@sectionintoc {4}{References}{13}{0}{4}

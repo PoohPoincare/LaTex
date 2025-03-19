@@ -1,0 +1,122 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{Ha}{book}{}
+    \name{author}{1}{}{%
+      {{hash=HS}{%
+         family={Hassani},
+         familyi={H\bibinitperiod},
+         given={Sadri},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{HS1}
+    \strng{fullhash}{HS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Mathematical Physics}
+    \field{year}{2013}
+  \endentry
+
+  \entry{MP}{book}{}
+    \name{author}{2}{}{%
+      {{hash=�}{%
+         family={姚端正},
+         familyi={�\bibinitperiod},
+      }}%
+      {{hash=��}{%
+         prefix={周国全and},
+         prefixi={�\bibinitperiod},
+         family={贾俊基},
+         familyi={�\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {科学出版社}%
+    }
+    \strng{namehash}{���1}
+    \strng{fullhash}{���1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{数学物理方法}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Numerical}{book}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{Richard L. Burden and J. Douglas Faires}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Richard Stratton}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Numerical Analysis}
+    \field{year}{2010}
+  \endentry
+
+  \entry{suan}{book}{}
+    \name{author}{2}{}{%
+      {{hash=HT}{%
+         family={H.Cormen},
+         familyi={H\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=EC}{%
+         family={E.Leiserson},
+         familyi={E\bibinitperiod},
+         given={Charles},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=�}{%
+         family={殷建平等},
+         familyi={�\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {机械工业出版社}%
+    }
+    \strng{namehash}{HTEC1}
+    \strng{fullhash}{HTEC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{算法导论}
+    \field{year}{2013}
+  \endentry
+
+  \entry{PFGPlots}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{{PGFPlots - A LaTeX package to create plots.}}
+    \verb{url}
+    \verb https://pgfplots.sourceforge.net/
+    \endverb
+  \endentry
+\enddatalist
+\endinput
