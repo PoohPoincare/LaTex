@@ -1,0 +1,76 @@
+\chapter{固体物理基础}
+\section{从波函数到宏观物理量}
+凝聚态物理的起点是多粒子的薛定谔方程,$\Psi(\{ \mbf{r}_i\},t)$是反对称的多粒子波函数，简单起见我们暂时不考虑自旋。
+\begin{align}
+    i\hbar\dv{\Psi(\{ \mathbf{r}_i\},t)}{t}=\hat{H}\Psi(\{ \mathbf{r}_i\},t)
+    \label{hamiltonian}
+\end{align}
+哈密顿算符是位置算符、动量算符（以及时间和系统所处外部环境）的函数，其函数形式与经典力学的哈密顿量相同，包含了系统与相互作用相关的全部信息。
+\begin{align}
+    \hat{H}=-\frac{\hbar^2}{2m_e}\sum_i \nabla_{i}^{2}-\frac{\hbar^2}{2M_I}\sum_I \nabla_{I}^{2}-\sum_{i,I}\frac{Z_Ie^2}{|r_i-R_I|}+\frac{1}{2}\sum_{i\neq j}\frac{e^2}{r_i-r_j}+\frac{1}{2}\sum_{I\neq J}\frac{Z_IZ_Je^2}{|R_I-R_J|}
+\end{align}
+其中$Z_I$和$M_I$是原子核的电荷数和质量。
+\subsection{电子密度}
+\begin{gather}
+    \hat{n}(\mathbf(r))=\sum_{i=1}^{N}\delta(\mathbf{r}-\mathbf{r}_i)\\
+    n(\mathbf{r})=\frac{\langle\Psi|\hat{n}(\mathbf{r}\rangle)}{\langle\Psi|\Psi\langle}
+    =N\frac{\int \dd^3r_2\dd^3r_3\cdots\dd^3r_N|\Psi({r,r_2,r_3\cdots r_N})|^2}{\int \dd^3r_1\dd^3r_2\dd^3r_3\cdots\dd^3r_N|\Psi({r_1,r_2,r_3\cdots r_N})|^2}
+\end{gather}
+\subsection{能量}
+忽略掉原子核的动能，系统的哈密顿量可以分为以下几部分：
+\begin{equation}
+    \hat{H}=\hat{T}+\hat{V}_{\text{ext}}+\hat{V}_{\text{int}}+E_{II}
+\end{equation}
+它们分别对应于公式电子动能、电子与核的相互作用、电子之间的相互作用、原子核之间的相互作用。$\hat{H}$的期望值也可以拆成这几项：
+\begin{equation}
+    E\equiv \langle\hat{H}\rangle=\frac{\Bk{\hat{H}}}{\langle\Psi|\Psi\rangle}=\langle\hat{T}\rangle+\langle\hat{V}_{\text{int}}\rangle+\int \dd^3r V_{\text{ext}}(\mathbf{r})n(\mathbf{r})+E_{II}
+    \label{energy}
+\end{equation}
+如果将能量E看做是波函数$\Psi$的泛函，那么哈密顿量的本征态就是使能量取得极值的鞍点。我们用拉格朗日乘子法处理公式\ref{energy}，得到的结果是定态薛定谔方程：
+\begin{equation}
+    \hat{H}|\Psi\rangle=E|\Psi\rangle
+\end{equation}
+\section{晶体结构}
+\begin{itemize}
+    \item 理想的晶体是由相同的\tbf{原子团}（注意是原子团而不是原子）在空间中\tbf{无限重复}排列构成的，这样的原子团称为\tbf{基元（basis）}。
+    \item 在研究晶体的结构时，这些原子团可以抽象为几何点，所有点的集合称为\tbf{晶格（lattice）}。
+    \item 由于晶体具有平移对称性，可以通过平移$u_1\vec{a}_1+u_2\vec{a}_2+u_3\vec{a}_3$使每一个格点移动到完全等价的另一个格点。如果以上的操作可以遍历全部格点，那么这个晶格就称为初基晶格，$\vec{a}_i$称为\tbf{初基平移矢量(primitive translation vector)}。基元内原子j的中心位置也可以用$\vec{a}$来表示：
+    \begin{equation*}
+        \mathbf{r}_j=x_j\mathbf{a}_1+y_j\mathbf{a}_2+z_j\mathbf{a}_3
+    \end{equation*}初基平移矢量的选取不是唯一的。我们往往用初基平移矢量来定义晶轴。
+    \item 体积最小的晶胞称为原胞。初基平移矢量所确定的平行六面体($\vec{a}_1\cdot\vec{a}_2\times\vec{a}_3$)是原胞的一种选取方法，因为初级平移矢量的选取不唯一，原胞选取也不唯一。
+    \item \tbf{维格纳-赛茨原胞}：原胞的另一种取法，把一个格点和相邻格点用直线连接起来，做连线的垂直平分线或者垂直平分面，围成的最小体积。
+\end{itemize}
+\section{倒空间}
+周期性的函数可以展开成傅里叶级数,对于晶体中的波函数:
+\begin{align}
+    n(\mathbf{r})&=\sum_{\mathbf{G}}n_Ge^{i\mathbf{G}\cdot\mathbf{r}}\\
+    n_G&=\frac{1}{V_c}\int_{cell}n(\vec{r})e^{-i\mathbf{G\cdot r}}\dd{\vec{r}}
+\end{align}
+$\mathbf{G}$不是任意的,因为$n(\mathbf{r})$具有平移不变性:
+\begin{equation}
+    n(\mathbf{r}+\vec{T})=\sum_{\mathbf{G}}n_Ge^{i\mathbf{G}\cdot\mathbf{r}}e^{i\mathbf{G}\cdot\mathbf{T}}=n(\mathbf{r})
+\end{equation}
+我们定义倒格子的轴矢量:
+\begin{equation}
+    \mathbf{b}_1=2\pi\frac{\mathbf{a}_2\times\mathbf{a}_3}{\mathbf{a_1}\cdot\mathbf{a}_2\times\mathbf{a}_3}
+    \quad
+    \mathbf{b}_2=2\pi\frac{\mathbf{a}_3\times\mathbf{a}_1}{\mathbf{a_2}\cdot\mathbf{a}_3\times\mathbf{a}_1}
+    \quad
+    \mathbf{b}_3=2\pi\frac{\mathbf{a}_1\times\mathbf{a}_2}{\mathbf{a_3}\cdot\mathbf{a}_1\times\mathbf{a}_3}
+\end{equation}
+倒空间每个初基矢量和实空间的两个轴矢量正交:
+\begin{equation}
+    \mathbf{b}_i\cdot\mathbf{a}_j=2\pi\delta_{ij}
+\end{equation}
+当$\mathbf{G}=v_1\mathbf{b}_1+v_2\mathbf{b}_2+v_3\mathbf{b}_3(v_i$是整数)时,$\exp(i\mathbf{G}\cdot\mathbf{T})=1$,因此$\mathbf{G}=v_1\mathbf{b}_1+v_2\mathbf{b}_2+v_3\mathbf{b}_3$就是波矢被允许的取值范围.
+\subsection{布里渊区}
+布里渊区的定义是倒格子空间中的维格纳-赛茨原胞,它的边界是服从衍射条件的波矢$\mathbf{k}$:
+\begin{equation}
+    2\mathbf{k}\cdot\mathbf{G}=G^2
+\end{equation}
+倒格子的中央晶胞称为第一布里渊区.
+\section{固体能带理论}
+
+\section{附录:三维空间的十四种晶格}
+\section{附录:晶体衍射条件}

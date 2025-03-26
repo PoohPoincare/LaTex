@@ -1,0 +1,47 @@
+\chapter{量子力学基础}
+\paragraph{}
+本章主要介绍量子力学中的基本概念和数学工具，包括狄拉克符号、表象理论、角动量、全同粒子等，关于量子力学的诠释和历史，将会在自然哲学部分中介绍。
+\paragraph{}
+参考书目：
+\begin{itemize}
+    \item 《量子力学导论》，格里菲斯，很经典的入门书籍，有中文版；
+    \item 《量子力学》，科恩-塔诺季，值得收藏的一本书，大师之作，详略得当，附录非常全面；
+    \item 《量子力学原理》，王正行，这本书花费了很多篇幅在狄拉克符号上，适合对此感到困惑的初学者；
+    \item 《高等量子力学》，喀兴林，表象理论和全同粒子介绍的比较详细。
+\end{itemize}
+    \section{量子力学的基本假设}
+\begin{enumerate}
+    \item 
+         描写微观系统状态的数学量是希尔伯特空间(态空间)中的矢量(态矢量$|\psi\rangle$),相差一个复数因子的两个矢量，描写同一状态。
+         \item 
+         每一个可测量的物理量$\mathcal{A}$都可以用希尔伯特空间中的一个厄米算符A描述，因此之后我们统一使用大写字母标记，这个算符是一个观察算符；
+         \item 
+         物理量所能取的值$a_i$，只能是相应算符A的本征值之一，因为A是厄米的，因此测量结果总是实数；
+        \begin{equation}
+            A|a_i\rangle=a_i|a_i\rangle\qquad\langle a_i|a_j\rangle=\delta_{ij}
+        \end{equation}
+        \item 
+         物理量 A 在状态$|\psi\rangle$中取各值$a_i$的概率，与态矢量$|\psi\rangle$按 A 的归一化本征矢量{$|a_i\rangle$}的展开式中$|a_i\rangle$的系数$c_i$的复平方成正比。若$|\psi\rangle$是归一化的，那么测量物理量$A$得到$a_i$的概率是$|c_i|^2$。因此可以写出A在状态$|\psi\rangle$的平均值$\langle A\rangle$:
+        \begin{align}
+            &|\psi\rangle=\sum_{i}|a_i\rangle c_i=\sum_{i}|a_i\rangle\langle a_i|\psi\rangle\\
+            &\langle A\rangle=\frac{\sum_{i}c_i^{*}c_ia_i}{\sum_{i}c_i^{*}c_i}=\frac{\sum_i\langle \psi|a_i\rangle\langle a_i|\psi\rangle a_i}{\mathbf{1}}=\langle\psi|A|\psi\rangle
+        \end{align}
+        \item 
+            微观系统中每个粒子的直角坐标下的位置算符 $X_i$(i=l, 2, 3),与相应的正则动量算符 P，有下列对易关系：
+        \begin{gather}
+            [X_i,X_j]=0 \qquad [P_i,P_j]=0 \qquad [X_i,P_j]=i\hbar\delta_{ij}\qquad\text{其中}\hbar=\frac{h}{2\pi}
+        \end{gather}
+        而不同粒子间的所有算符相互对易$[A_i,B_j]=0$。
+        \item 
+        微观系统的状态随时间演化的方式是(含时)薛定谔方程：
+        \begin{equation}
+            i\hbar\pdv{}{t}|\psi\rangle=H|\psi\rangle
+        \end{equation}
+        只要给出了初始状态$|\psi(0)\rangle$就足以知道此后任意时刻的状态$\psi(t)\rangle$。在演化过程中没有任何不确定性，只在测量时发生不可预测的跃变。
+        \item 描写全同粒子系统的态矢量，对于任意一对粒子的对调，是对称的（对调前后完全相同）或反对称的（对调前后差一个负号），服从前者的粒子称为玻色子，服从后者的粒子称为费米子．
+    \end{enumerate}
+\section{谐振子和矩阵方法}
+\section{角动量}
+
+
+

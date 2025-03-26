@@ -1,0 +1,99 @@
+\frontmatter
+
+% ---- Half Title Page ----
+% current geometry will be restored after title page
+\newgeometry{top=1.75in,bottom=.5in}
+\begin{titlepage}
+\begin{flushleft}
+    \centering
+% Title
+\textbf{\fontsize{60}{60}\songti\bfseries{理论物理笔记}\\}
+\begin{flushleft}
+    \centering
+    \textbf{\Huge Theoretical Physics Notes}
+\end{flushleft}
+% Draw a line 4pt high
+%\par\noindent\rule{\textwidth}{4pt}\\
+
+% Subtitle
+% Shaded box from left to right. Text node is midway (centered).
+%\begin{tikzpicture}
+%\shade[bottom color=lightgray,top color=white]
+%    (0,0) rectangle (\textwidth, 1.5)
+%    node[midway] {\textbf{\large \textit{\booksubtitle}}};
+%\end{tikzpicture}
+
+% Edition Number
+\begin{flushright}
+\textbf{\huge Yee}
+\end{flushright}
+
+% \vspace{\fill}
+\vspace{\fill}
+\centering
+\textbf{\huge \kaishu{一份简明的物理学手册编纂计划}}
+\end{flushleft}
+\end{titlepage}
+\restoregeometry
+% ---- End of Half Title Page ----
+
+
+% No page numbers on the Frontispiece page
+\thispagestyle{empty}
+
+
+% ---- Title Page ----
+% current geometry will be restored after title page
+\newgeometry{top=1.75in,bottom=.5in}
+\begin{titlepage}
+\begin{flushleft}
+
+% Title
+\textbf{\fontfamily{qcs}\fontsize{48}{54}\selectfont Theoretical Physics Notes\\}
+
+% Draw a line 4pt high
+\par\noindent\rule{\textwidth}{4pt}\\
+
+% Shaded box from left to right with Subtitle
+% The text node is midway (centered).
+%\begin{tikzpicture}
+%\shade[bottom color=lightgray,top color=white]
+%    (0,0) rectangle (\textwidth, 1.5)
+%    node[midway] {\textbf{\large \textit{\booksubtitle}}};
+%\end{tikzpicture}
+
+% Edition Number
+\begin{flushright}
+\Large First Edition
+\end{flushright}
+
+\vspace{\fill}
+
+% Author and Location
+\textbf{\large \bookauthor}\\[3.5pt]
+\textbf{\large \textit{\authorsubtitle}}
+
+\vspace{\fill}
+
+% Self Publishing Logo. Free to use: CC0 license.
+% The source file is book.svg. If you change the svg, you must then convert
+% it to pdf. There are many online and offline tools available to do that.
+\end{flushleft}
+\end{titlepage}
+\restoregeometry
+% ---- End of Title Page ----
+
+% Do not show page numbers on colophon page
+\thispagestyle{empty}
+
+\begin{flushleft}
+\vspace*{\fill}
+This book was typeset using \LaTeX{} software.\\
+\vspace{\fill}
+Copyright \textcopyright{} \the\year{}  \bookauthor\\
+License: \booklicense
+\end{flushleft}
+
+% A title page resets the page # to 1, but the second title page
+% was actually page 3. So add two to page counter.
+\addtocounter{page}{2}

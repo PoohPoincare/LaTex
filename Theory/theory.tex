@@ -1,0 +1,37 @@
+\documentclass[a4paper,fontset=none]{ctexbook}
+\ctexset{fontset=windows} 
+\title{Note}
+\usepackage{stb}
+% Content Starts Here
+\begin{document}
+\input{title}
+% The asterisk excludes chapter from the table of contents.
+\chapter{Preface}
+% three-level Table of Contents
+\setcounter{tocdepth}{3}
+\tableofcontents
+\addcontentsline{toc}{chapter}{Content}
+\mainmatter
+%\small
+%\fontsize{11pt}{3pt}
+\input{pages/math.tex}
+\input{pages/DiffEq.tex}
+\input{pages/Green.tex}
+\input{pages/function.tex}
+\input{pages/tensor.tex}
+\input{pages/group.tex}
+\input{pages/mechanic.tex}
+\input{pages/quantum.tex}
+\input{pages/quantum2.tex}
+\input{pages/relativity.tex}
+\input{pages/solid.tex}
+\input{pages/particle.tex}
+%\input{pages/INCAR.tex}
+\backmatter
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+\nocite{*}%让所有未被引用的文献都列出
+\addcontentsline{toc}{chapter}{References}
+\printbibliography
+
+\end{document}

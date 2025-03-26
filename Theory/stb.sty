@@ -1,0 +1,143 @@
+\ProvidesPackage{stb}
+\newcommand{\booksubtitle}{}
+\newcommand{\booklicense}{}
+\author{Yee}
+% Author subtitle could be a university or a geographical location, for example
+\newcommand{\authorsubtitle}{School of Physics,WHU}
+% Create convenient commands \booktitle and \bookauthor
+\makeatletter
+\newcommand{\booktitle}{\@title}
+\newcommand{\bookauthor}{\@author}
+\makeatother
+% This utf8 declaration is not needed for versions of latex > 2018 but may
+% be helpful for older software. Eventually it may not be worth keeping.
+\usepackage[utf8]{inputenc}  
+\usepackage{ctex}
+\usepackage{fix-cm}  % this package allows large \fontsize
+\usepackage{tikz}    % this is for graphics. e.g. rectangle on title page
+\usepackage{amsmath} % Used by equations
+\usepackage{ntheorem}
+\theorembodyfont{\bfseries}%\upshape
+\theoremseparator{:}
+%\theoremstyle{break}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{proof}{Proof}[section]
+\usepackage{xcolor}
+\definecolor{whugreen}{RGB}{17,87,64}
+%FangSong,KaiTi,SimSun,SimHei 
+% The following dimensions specify 4.75" X 7.5" content on 6 3/8" by 9 1/4"
+% paper. The paper width and height can be tweaked as required and the content
+% should size to fit within the margins accordingly.
+% The (inside) bindingoffset should be larger for books with more pages. Some
+% standard recommended sizes are .375in minimum up to 1in for 600+ page books.
+% Sizes .75in and .875in are also recommended roughly at 150 and 400 pages.
+\usepackage[left=20mm, right=20mm,top=20mm, bottom=20mm,]{geometry}%页边距
+% Here is an alternative geometry for reading on letter size paper:
+% \usepackage[margin=.75in, paperwidth=8.5in, paperheight=11in]{geometry}
+\renewcommand{\contentsname}{Contents} % default is {Contents}
+\usepackage{makeidx}
+\makeindex % Initialize an index so we can add entries with \index
+% The next few commands are for creating fake content to fill out the template.
+% You should delete this (e.g.  everything up to, but not including,
+% \begin{document}) after you insert your own content.
+% Example content from Einstein's Meaning of Relativity.
+% Public domain book: http://www.gutenberg.org/ebooks/36276
+\usepackage{titlesec}
+\usepackage{titletoc}
+\newCJKfontfamily\sectioncf{SimHei}
+\titleformat{\part}{\lishu\raggedright\Huge\bfseries}{第\,\thepart\,卷}{1em}{}
+\titleformat{\chapter}{\sectioncf\Huge\bfseries\color{whugreen}}{Chapter\,\thechapter\,}{1em}{}
+\titleformat*{\section}{\Large\sectioncf\bfseries\color{whugreen}}
+\titleformat*{\subsection}{\large\sectioncf\bfseries\color{whugreen}}
+\titleformat*{\subsubsection}{\normalsize\bfseries}
+\titleformat*{\paragraph}{\bfseries}
+\titleformat*{\subparagraph}{\bfseries}
+\newcommand{\tbf}[1]{\textbf{\color{whugreen}{\emph{#1}}}}%一个参数的自定义命令
+\newcommand{\mbf}[1]{\mathbf{\emph{$#1$}}}
+\newcommand{\Bk}[1]{\langle\Psi|\emph{$#1$}|\Psi\rangle}
+\newcommand{\bk}[1]{\langle\psi|\emph{$#1$}|\psi\rangle}
+\setCJKmainfont[AutoFakeBold=3.17]{SimSun}
+\usepackage{physics}
+\usepackage{mathdesign}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\lstset{
+    basicstyle          =   \ttfamily,          % 基本代码风格
+    keywordstyle        =   \color{teal}\bfseries,          % 关键字风格
+    commentstyle        =   \rmfamily\itshape,  % 注释的风格，斜体
+    stringstyle         =   \ttfamily,  % 字符串风格
+    commentstyle    =   \color{olive}\ttfamily,
+    breaklines      =   true,   % 自动换行，建议不要写太长的行
+    columns         =   fixed,  % 如果不加这一句，字间距就不固定，很丑，必须加
+    flexiblecolumns,                % 别问为什么，加上这个
+    %numbers             =   left,   % 行号的位置在左边，注释掉则不显示行号
+    showspaces          =   false,  % 是否显示空格，显示了有点乱，所以不现实了
+    numberstyle         =   \zihao{-5}\ttfamily,    % 行号的样式，小五号，tt等宽字体
+    showstringspaces    =   false,
+    captionpos          =   t,      % 这段代码的名字所呈现的位置，t指的是top上面
+    frame               =   lrtb,   % 显示边框
+}
+
+\lstdefinestyle{Python}{
+    language        =   Python, % 语言选Python
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{teal},
+    keywordstyle    =   [2] \color{cyan},
+    stringstyle     =   \color{red},
+    commentstyle    =   \color{olive}\ttfamily,
+    breaklines      =   true,   % 自动换行，建议不要写太长的行
+    columns         =   fixed,  % 如果不加这一句，字间距就不固定，很丑，必须加
+    basewidth       =   0.5em,
+}
+\lstdefinestyle{Bash}{
+    language        =   Bash, 
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{teal},
+    keywordstyle    =   [2] \color{cyan},
+    stringstyle     =   \color{red},
+    commentstyle    =   \color{olive}\ttfamily,
+    breaklines      =   true,   % 自动换行，建议不要写太长的行
+    columns         =   fixed,  % 如果不加这一句，字间距就不固定，很丑，必须加
+    basewidth       =   0.5em,
+}
+\lstdefinestyle{C++}{
+    language        =   C++, 
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{teal},
+    keywordstyle    =   [2] \color{cyan},
+    stringstyle     =   \color{red},
+    commentstyle    =   \color{olive}\ttfamily,
+    breaklines      =   true,   % 自动换行，建议不要写太长的行
+    columns         =   fixed,  % 如果不加这一句，字间距就不固定，很丑，必须加
+    basewidth       =   0.5em,
+}
+\usepackage{subfig}
+\RequirePackage{subcaption}
+\RequirePackage{stfloats} 
+\RequirePackage[colorlinks=true, linkcolor=teal!30!black,anchorcolor=teal!30!black,citecolor=teal!30!black,urlcolor=teal,bookmarks=true,pdfstartview=Fit,]{hyperref}
+\RequirePackage[
+    backend=bibtex,
+    %sorting=ynt,
+    style=ieee
+]{biblatex}
+\addbibresource{bib/stb.bib}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{longtable} % 支持跨页表格
+\usepackage{tabularx} % 自动调整列宽
+\usepackage{lscape}   % 横向表格支持
+\usepackage{makecell} % 支持单元格内换行
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{13pt}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[CE,CO]{\leftmark}%对书籍显示chapter，对文章显示section
+\renewcommand{\headrulewidth}{1pt}
+\usepackage{pdfpages}
