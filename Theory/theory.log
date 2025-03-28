@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  26 MAR 2025 16:34
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  28 MAR 2025 18:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1249,7 +1249,14 @@ File: ppxetex.def 2024/01/21 v0.5y Pdfpages driver for XeTeX (AM)
 )
 \@quotelevel=\count527
 \@quotereset=\count528
- (./theory.aux)
+ (./theory.aux
+
+LaTeX Warning: Label `cc' multiply defined.
+
+
+LaTeX Warning: Label `seq_c' multiply defined.
+
+)
 \openout1 = `theory.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -1600,74 +1607,130 @@ File: pdf/Spherical Coordinates.pdf Graphic file (type pdf)
  [6
 
 ]
-第二章
-[7
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf>
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf>
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf, page 1>
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf, page 1>
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf, page 1>
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf, page 1>
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf, page 1>
+ [7
 
-] [8
+]
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf, page 2>
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf, page 2>
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf, page 2>
+ [8
+
+]
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf, page 3>
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf, page 3>
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf, page 3>
+ [9
+
+]
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf, page 4>
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf, page 4>
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf, page 4>
+ [10
+
+]
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf, page 5>
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf, page 5>
+File: pdf/Cylindrical Coordinates.pdf Graphic file (type pdf)
+<use pdf/Cylindrical Coordinates.pdf, page 5>
+ [11
+
+] [12
+
+]
+第二章
+[13] [14
 
 ]
 第三章
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 8.
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 9.
 
-Overfull \hbox (18.8839pt too wide) in paragraph at lines 9--10
+Overfull \hbox (18.8839pt too wide) in paragraph at lines 10--11
 [][]\TU/SimSun(1)/b/n/10.53937 如 果 函 数 $\OML/cmm/m/it/10.53937 f\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 x[]; x[]; []  ; x[]\OT1/cmr/m/n/10.53937 )$ \TU/SimSun(1)/b/n/10.53937 是 区 间 $\OT1/cmr/m/n/10.53937 [\OML/cmm/m/it/10.53937 a[]; b[]\OT1/cmr/m/n/10.53937 ][]$
  []
 
 File: figure/math/FT.png Graphic file (type bmp)
 <figure/math/FT.png>
-[9] [10]) (./pages/DiffEq.tex [11] [12
+[15] [16]) (./pages/DiffEq.tex [17] [18
 
 ]
 第四章
-) (./pages/Green.tex [13] [14
+) (./pages/Green.tex [19] [20
 
 ]
 第五章
-) (./pages/function.tex [15] [16
+) (./pages/function.tex [21] [22
 
 ]
 第六章
-) (./pages/tensor.tex [17] [18
+) (./pages/tensor.tex [23] [24
 
 ]
 第七章
-) (./pages/group.tex [19] [20
+) (./pages/group.tex [25] [26
 
 ]
 第八章
-) (./pages/mechanic.tex [21] [22
+) (./pages/mechanic.tex [27] [28
 
 ]
 第九章
-) (./pages/quantum.tex [23] [24
+) (./pages/quantum.tex [29] [30
 
 ]
 第十章
-[25]) (./pages/quantum2.tex [26]
+[31]) (./pages/quantum2.tex [32]
 第十一章
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) (./pages/relativity.tex [27
+) (./pages/relativity.tex [33
 
-] [28
+] [34
 
 ]
 第十二章
-) (./pages/solid.tex [29] [30
+
+LaTeX Font Warning: Font shape `TU/SimSun(1)/b/it' undefined
+(Font)              using `TU/SimSun(1)/b/n' instead on input line 11.
+
+[35]
+File: figure/relativity/1.png Graphic file (type bmp)
+<figure/relativity/1.png>
+ [36]) (./pages/solid.tex [37] [38
 
 ]
 第十三章
-
-LaTeX Font Warning: Font shape `TU/SimSun(1)/b/it' undefined
-(Font)              using `TU/SimSun(1)/b/n' instead on input line 35.
-
-[31] [32]) (./pages/particle.tex [33] [34
-
-]
+[39] [40] [41]) (./pages/particle.tex [42]
 第十四章
-) [35] [36
+) [43
+
+] [44
 
 ]
 No file theory.ind.
@@ -1705,7 +1768,7 @@ Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
 \tf@thm=\write8
 \openout8 = `theory.thm'.
 
- [37
+ [45
 
 ] (./theory.aux)
  ***********
@@ -1724,13 +1787,16 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
+LaTeX Warning: There were multiply-defined labels.
+
+
 Package rerunfilecheck Warning: File `theory.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `theory.out':
-(rerunfilecheck)             Before: A2B3C67AC441711C633844228D9BDB89;3644
-(rerunfilecheck)             After:  BFC69E70540A347D802469AEE0452EB1;3893.
+(rerunfilecheck)             Before: 20590C7F82324DF549B58CBF3D4169E9;5352
+(rerunfilecheck)             After:  B25FE0FD49D2000E024D9436FE596DA3;5441.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                theory
@@ -1741,12 +1807,12 @@ Package logreq Info: Writing requests to 'theory.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40060 strings out of 474772
- 833922 string characters out of 5761269
- 1942842 words of memory out of 5000000
- 61527 multiletter control sequences out of 15000+600000
- 632927 words of font info for 109 fonts, out of 8000000 for 9000
+ 40121 strings out of 474772
+ 836249 string characters out of 5761269
+ 1944842 words of memory out of 5000000
+ 61583 multiletter control sequences out of 15000+600000
+ 632935 words of font info for 110 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  117i,17n,121p,1915b,4989s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on theory.pdf (45 pages).
+Output written on theory.pdf (53 pages).

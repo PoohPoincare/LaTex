@@ -11,8 +11,12 @@
 \end{align}
 其中$Z_I$和$M_I$是原子核的电荷数和质量。
 \subsection{电子密度}
+电子密度算符:
 \begin{gather}
-    \hat{n}(\mathbf(r))=\sum_{i=1}^{N}\delta(\mathbf{r}-\mathbf{r}_i)\\
+    \hat{n}(\mathbf(r))=\sum_{i=1}^{N}\delta(\mathbf{r}-\mathbf{r}_i)
+    \end{gather}
+    期望值:
+    \begin{gather}
     n(\mathbf{r})=\frac{\langle\Psi|\hat{n}(\mathbf{r}\rangle)}{\langle\Psi|\Psi\langle}
     =N\frac{\int \dd^3r_2\dd^3r_3\cdots\dd^3r_N|\Psi({r,r_2,r_3\cdots r_N})|^2}{\int \dd^3r_1\dd^3r_2\dd^3r_3\cdots\dd^3r_N|\Psi({r_1,r_2,r_3\cdots r_N})|^2}
 \end{gather}
@@ -42,7 +46,7 @@
     \item \tbf{维格纳-赛茨原胞}：原胞的另一种取法，把一个格点和相邻格点用直线连接起来，做连线的垂直平分线或者垂直平分面，围成的最小体积。
 \end{itemize}
 \section{倒空间}
-周期性的函数可以展开成傅里叶级数,对于晶体中的波函数:
+周期性的函数如晶体中的势能、电子密度等可以展开成傅里叶级数，以电子密度为例:
 \begin{align}
     n(\mathbf{r})&=\sum_{\mathbf{G}}n_Ge^{i\mathbf{G}\cdot\mathbf{r}}\\
     n_G&=\frac{1}{V_c}\int_{cell}n(\vec{r})e^{-i\mathbf{G\cdot r}}\dd{\vec{r}}
@@ -70,7 +74,61 @@ $\mathbf{G}$不是任意的,因为$n(\mathbf{r})$具有平移不变性:
     2\mathbf{k}\cdot\mathbf{G}=G^2
 \end{equation}
 倒格子的中央晶胞称为第一布里渊区.
+\section{自由电子气}
 \section{固体能带理论}
-
+\subsection{波恩-冯卡门边界条件}
+\subsection{近自由电子近似}
+近自由电子近似将晶体中离子实对电子的作用,看过是一个周期势场微扰.一个具有平移操作不变性的周期性势场可以展开成倒格矢的傅里叶级数:
+\begin{equation}
+    U(x)=\sum_G U_Ge^{iGx}
+\end{equation}
+\subsection{布洛赫定理}
+平移算符和哈密顿算符对易,二者具有相同的本征函数:
+\begin{align}
+    \hat{H}\psi(r)=E\psi(r) \qquad \hat{T}(r)\psi(r)=C(r)\psi(r)
+\end{align}
+平移操作满足交换律$\hat{T}(r_1)\hat{T}(r_2)=\hat{T}(r_2)\hat{T}(r_1)=\hat{T}(r_1+r_2)$,因此布拉维平移群是阿贝尔群,根据舒尔引理,平移算符的本征值 C(r) 构成一维表示.
+由于群乘法规则$\hat{T}(r_1)\hat{T}(r_2)=\hat{T}(r_1+r_2)$,本征值需要满足:$C(r_1)C(r_2)=C(r_1+r_2)$,唯一连续解是指数函数:
+\begin{equation}
+    C(r)=e^{ik\cdot r}
+\end{equation}
+于是$\hat{T}(a)\psi(r)=\psi(r+a)=e^{ik\cdot a}\psi(r)$(注意不是级数).
+为了满足这一关系，波函数必须包含一个随位置变化的相位因子$e^{ik\cdot r}$,以抵消平移带来的相位变化.将这部分显式地提取出来:
+\begin{gather}
+    \psi(r)=e^{ik\cdot r}u(r)\rightarrow
+    \psi(r+a)=e^{ik\cdot(r+a)}u(r+a)=e^{ik\cdot a}e^{ik\cdot r}u(r)
+\end{gather}
+因此u(r)是周期为a的函数:
+\begin{gather}
+    u(r+a)=u(r)
+\end{gather}
+\subsection{电子在周期性势场的波动方程}
+考虑一个晶格常数为a,首尾相连(波恩-冯卡门边界条件),周长为L的一维晶格圆环.单电子近似下,晶体中电子的波动方程可以写为以下形式:
+\begin{equation}
+    (\frac{1}{2m}p^2+U(x))\psi(x)=\epsilon\psi(x)
+    \label{seq_c}
+\end{equation}
+我们将单电子波函数$\psi(x)$展开,
+\begin{equation}
+    \psi(x)=\sum_{k}C_{k}e^{ikx}
+\end{equation}
+波矢k需要满足$k=\frac{2\pi n}{L}\text{(n是整数)}$,因为$\psi(x)$是周期为L的周期性函数(参阅傅里叶级数).布洛赫定理对k
+提出了额外的要求:
+\[
+    \left\{\begin{array}{l}
+        \psi(x)=e^{ikx}\sum_{k'}C_ke^{i(k'-k)x}\\
+        \psi(x+a)=e^{ik(x+a)}\sum_{k'}C_ke^{i(k'-k)x}e^{i(k'-k)a}
+    \end{array}\right .\rightarrow e^{i(k'-k)a}=1\rightarrow k'=k+G
+    \]
+因此一旦波矢k出现在$\psi(x)$的展开式中,那么其它展开项只能是符合k+G的波矢.将势能和波函数的级数代入
+\label{seq_c},得到:
+\begin{align}
+\sum_{k}\frac{\hbar^2k^2}{2m}C_ke^{ikx}+\sum_{G}\sum_{k}U_GC_ke^{i(k+G)x}=\epsilon\sum_{k}C_ke^{ikx}
+\end{align}
+方程两端各个k的傅里叶分量系数相等:
+\begin{gather}
+    (\lambda_k-\epsilon)C_k+\sum_{G}U_GC_{k-G}=0 \quad\quad\text{其中}\quad\lambda_k=\frac{\hbar^2k^2}{2m}
+\end{gather}
+上式称为\tbf{中心方程}.
 \section{附录:三维空间的十四种晶格}
 \section{附录:晶体衍射条件}
